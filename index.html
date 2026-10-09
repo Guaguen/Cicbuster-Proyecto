@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CicBuster - Boletos de cine en línea</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="site-header__logo">CICBUSTER</h1>
+        <p class="site-header__slogan">Compra tus entradas de <strong>cine</strong> en línea y descubre la mejor
+            <em>cartelera</em> de la ciudad.</p>
+
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html" aria-current="page">Inicio</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="pages/nosotros.html">Nosotros</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="pages/servicios.html">Servicios</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="pages/blog.html">Blog</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+    <main class="layout__main">
+        <section class="hero" id="inicio">
+            <h2 class="hero__title">Tu próxima película empieza aquí</h2>
+            <p class="hero__text">
+                Compra tus entradas en línea, elige tu butaca y llega directo
+                a la sala. CicBuster reúne toda la cartelera de la ciudad en
+                un solo lugar.
+            </p>
+            <a class="btn" href="pages/servicios.html">Comprar entradas →</a>
+        </section>
+
+        <section class="section" id="cartelera">
+            <h2 class="section__title">Cartelera de la semana</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <header class="card__header">
+                        <h3 class="card__title">Órbita Rota</h3>
+                        <img class="card__image" src="./images/img1.jpg" alt="Nave espacial orbitando la Tierra" width="300">
+                        <p class="card__meta">
+                            Categoría: Ciencia ficción |
+                            <span class="card__tag">Horario: 7:30 pm</span>
+                        </p>
+                    </header>
+
+                    <p class="card__text">
+                        Una tripulación debe decidir quién regresa a casa cuando
+                        la nave pierde el rumbo. Precio: $65 MXN.
+                    </p>
+
+                    <a class="card__link" href="pages/servicios.html">Ver precios →</a>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <h3 class="card__title">Vecinos de Miedo</h3>
+                        <img class="card__image" src="./images/img2.jpg" alt="Calle vecinal sombría con edificios antiguos" width="300">
+                        <p class="card__meta">
+                            Categoría: Comedia |
+                            <span class="card__tag">Horario: 5:15 pm</span>
+                        </p>
+                    </header>
+
+                    <p class="card__text">
+                        Una familia recién mudada descubre que su vecindario
+                        esconde secretos hilarantes. Precio: $60 MXN.
+                    </p>
+
+                    <a class="card__link" href="pages/servicios.html">Ver precios →</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="sidebar">
+        <h2 class="sidebar__title">Recomendado para ti</h2>
+
+        <section class="sidebar__section">
+            <h3 class="sidebar__subtitle">Próximas funciones</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">Órbita Rota</li>
+                <li class="sidebar__item">Vecinos de Miedo</li>
+                <li class="sidebar__item">El Último Vagón</li>
+            </ul>
+        </section>
+
+        <section class="sidebar__section">
+            <h3 class="sidebar__subtitle">Enlaces útiles</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="pages/servicios.html">Precios y combos</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="pages/contacto.html">Reservaciones</a></li>
+            </ul>
+        </section>
+    </aside>
+    </div>
+
+    <footer class="site-footer">
+        <h2 class="site-footer__brand">CicBuster</h2>
+
+        <section class="site-footer__nav">
+            <h3 class="site-footer__subtitle">Navegación</h3>
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html">Inicio</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="pages/nosotros.html">Nosotros</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="pages/servicios.html">Servicios</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="pages/blog.html">Blog</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </section>
+
+        <hr class="site-footer__divider">
+
+        <p class="site-footer__legal">
+            <small>
+                2026 CicBuster. Proyecto académico - Segundo Parcial.
+            </small>
+        </p>
+    </footer>
+
+</body>
+
+</html>

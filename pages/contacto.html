@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CicBuster</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="site-header__logo">CICBUSTER</h1>
+        <p class="site-header__slogan">Compra tus entradas de <strong>cine</strong> en línea y descubre la mejor
+            <em>cartelera</em> de la ciudad.</p>
+
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="../index.html">Inicio</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="nosotros.html">Nosotros</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="servicios.html">Servicios</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="blog.html">Blog</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="layout">
+
+    <main class="layout__main">
+        <section class="section" id="formulario">
+            <figure class="banner">
+                <img class="banner__image banner__image--contain" src="../images/img10.jpg" alt="Logotipo de CicBuster: cartelera y boletos" width="1000">
+            </figure>
+            <h2 class="section__title">Envíanos un mensaje</h2>
+            <form class="form" action="#" method="post">
+                <div class="form__group">
+                    <label class="form__label" for="nombre">Nombre completo</label>
+                    <input class="form__input" type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="correo">Correo electrónico</label>
+                    <input class="form__input" type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="mensaje">Mensaje</label>
+                    <textarea class="form__input form__input--textarea" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button class="btn form__submit" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section class="section" id="contacto">
+            <h2 class="section__title">Nuestra sala principal</h2>
+            <address class="contact-info">
+                <p class="contact-info__text">
+                    Email: <a href="mailto:hola@cicbuster.com">hola@cicbuster.com</a>
+                    <br>
+                    Teléfono: <a href="tel:+525512345678">+52 55 1234 5678</a>
+                    <br>
+                    Dirección: Av. Reforma 123, Ciudad de México
+                    <br>
+                    Horario: Todos los días, 11:00 am - 11:00 pm
+                </p>
+            </address>
+        </section>
+
+    </main>
+
+    <aside class="sidebar">
+        <h2 class="sidebar__title">Recomendado para ti</h2>
+
+        <section class="sidebar__section">
+            <h3 class="sidebar__subtitle">Próximas funciones</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">Órbita Rota</li>
+                <li class="sidebar__item">Vecinos de Miedo</li>
+                <li class="sidebar__item">El Último Vagón</li>
+            </ul>
+        </section>
+
+        <section class="sidebar__section">
+            <h3 class="sidebar__subtitle">Enlaces útiles</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="servicios.html">Precios y combos</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="../index.html">Ver cartelera</a></li>
+            </ul>
+        </section>
+    </aside>
+    </div>
+    
+    <footer class="site-footer">
+        <h2 class="site-footer__brand">CicBuster</h2>
+
+        <section class="site-footer__nav">
+            <h3 class="site-footer__subtitle">Navegación</h3>
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a class="site-footer__link" href="../index.html">Inicio</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="nosotros.html">Nosotros</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="servicios.html">Servicios</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="blog.html">Blog</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </section>
+
+        <hr class="site-footer__divider">
+
+        <p class="site-footer__legal">
+            <small>
+                2026 CicBuster. Proyecto académico - Segundo Parcial.
+            </small>
+        </p>
+    </footer>
+
+</body>
+
+</html>

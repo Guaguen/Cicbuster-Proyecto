@@ -1,0 +1,159 @@
+:root {
+  --color-bg: #1a1a2e;
+  --color-text: #f0f0f0;
+  --color-surface: #16213e;
+  --color-surface-2: #1f2b4d;
+  --color-border: #2e3a63;
+  --color-muted: #b7b9c9;
+  --color-accent: #d63651;
+  --color-accent-dark: #b52a42;
+  --color-gold: #f5c518;
+
+  --font-title: "Bebas Neue", Impact, "Arial Narrow Bold", sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --radius: 12px;
+  --space: 1.5rem;
+  --max-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 1rem 1.25rem;
+  text-align: center;
+  background: linear-gradient(180deg, #0f1630 0%, var(--color-bg) 100%);
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.site-header__logo {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  text-shadow: 0 2px 0 var(--color-accent-dark);
+}
+
+.site-header__slogan {
+  max-width: 60ch;
+  color: var(--color-muted);
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.main-nav__link {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  color: inherit;
+  text-decoration: unset;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.main-nav__link:hover {
+  background-color: var(--color-surface-2);
+  border-color: var(--color-border);
+}
+
+.main-nav__link--active {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.main-nav__link--active:hover {
+  background-color: var(--color-accent-dark);
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space);
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.layout__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  flex: 1 1 600px;
+  min-width: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: var(--space);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
